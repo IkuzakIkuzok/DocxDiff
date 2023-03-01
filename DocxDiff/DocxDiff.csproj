@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <ApplicationHighDpiMode>DpiUnaware</ApplicationHighDpiMode>
+    <Authors>ikuzak</Authors>
+    <Copyright>(c) 2023 Kazuki KOHZUKI</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="A:\VS Project\DocxDiff\DocxDiff\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="A:\VS Project\DocxDiff\DocxDiff\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>..\..\ReadDocx\ReadDocx\bin\Release\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="System.ComponentModel" />
+  </ItemGroup>
+
+</Project>
